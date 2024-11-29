@@ -1,0 +1,424 @@
+/* Generelle opsætninger */
+html, body {
+    overflow-x: hidden;  /* Fjerner horisontal scrollbar */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Hovedstruktur */
+header {
+    color: #fff;
+    margin-top: 150px;
+    text-align: center;
+}
+
+header h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Main-indhold */
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main h3 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Sidebar */
+aside {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside section {
+    margin-bottom: 2rem;
+}
+
+aside h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #5F8CB4;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+footer nav a {
+    color: #aaa;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+/* Responsiv opsætning */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        max-width: 900px;
+    }
+
+    aside {
+        position: sticky;
+        top: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+/* === Grundlæggende Reset og Font === */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Navbar Styling */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5F8CB4;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+}
+
+.burger-menu {
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+}
+
+.nav-logo .navbar-brand,
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-logo .navbar-brand:hover,
+.link:hover {
+    color: #FF733C;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu ul li {
+    padding: 10px 20px;
+}
+
+.active {
+    border-bottom: 2px solid #FF733C;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #5F8CB4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Indholdssektion Styling */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212529;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.flex-shrink-0 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 200px auto 100px;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #5F8CB4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+
+h1 {
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 200px;   /* Øger afstanden ovenfor */
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    margin-bottom: 30px; /* Øger afstanden under h2 */
+}
+
+.klasse3 {
+    margin-top: 20px;   /* Tilføjer luft over p */
+    margin-bottom: 20px; /* Tilføjer luft under p */
+}
+
+.cta-btn {
+    margin-top: 20px;   /* Tilføjer luft over knappen */
+}
+
+p, .sort-tekst {
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 10px;
+} 
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Billed- og Indholdsstyling */
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #5F8CB4;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.afooter{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat;
+    background-size: 50%;
+    color: white;
+    text-align: center;
+    margin-top: 50px;  /* Ændrer marginen for at få billedet længere ned */
+    padding-top: 50px;  /* Ændrer padding for at få billedet længere ned */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100vw; 
+    height: 100vh; 
+    background: rgba(0, 0, 0, 0.6); 
+    padding-top: 170px;
+    padding-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #c9b16b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.cta-btn:hover {
+    background-color: #a88f59;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.about {
+    background-color: #e5e5e5;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.about h2, .activities h2, .gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobilvenlig Navbar og Hero Sektion */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background-color: #5F8CB4;
+        z-index: 999;
+        overflow-y: auto;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    .nav-menu.show {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        padding: 15px 0;
+    }
+}

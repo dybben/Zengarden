@@ -1,0 +1,121 @@
+/* Background, regular cursor and no padding or margin */
+body {
+	padding: 0;
+	margin: 0;
+	background: lightblue url(./images/tree_1.png) no-repeat bottom center;
+	cursor: url('./images/axe.png') 25 25, auto;
+	background-position: center top;
+	background-size: cover;
+	height: 3000px;
+}
+
+/* Headline */
+h1 {
+	font-size: 41px;
+	text-align: center;
+	color: #4E362B;
+}
+
+/* Headline under the big headline */
+h2 {
+	text-align: center;
+	color: #4E362B;
+}
+
+/* All other big texts/smaller headlines */
+h3 {
+	text-align: center;
+	color: #4E362B;
+}
+
+/* All regular text */
+p {
+	text-align: center;
+	margin: 0 auto;
+	color: #5C4033;
+}
+
+/* Linktext */
+a {
+	cursor: url('./images/axedown.png') 25 25, auto;
+	color: #4E362B;
+}
+
+/* All regular text is in this container */
+.text-container {
+	align-items: center;
+	top: 1000px;
+	position: relative;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Bunch of links at the bottom of the textcontainer */
+footer {
+	text-align: center;
+}
+
+/* The nextdesign button */
+.button {
+	display: block;
+	margin-top: 10px;
+	cursor: url('./images/axedown.png') 25 25, auto;
+}
+
+/* The link that is the button */
+.buttonlink {
+	display: inline-block;
+}
+
+/* A container for the button to center it */
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* The headline of the button */
+.nextdesigntext{
+	margin-top: 1050px;
+}
+
+
+/* Only apples past this point */
+
+/* The three different apples at the top of the tree */
+.apple1 {
+	width: 200px;
+	margin-top: 500px;
+	margin-left: 250px;
+	position: absolute;
+}
+
+.apple2 {
+	width: 200px;
+	margin-top: 300px;
+	margin-left: 1100px;
+	position: absolute;
+}
+
+.apple3 {
+	width: 200px;
+	margin-top: 150px;
+	margin-left: 600px;
+	position: absolute;
+}
+
+/* What happens when hovering over any of the three apples */
+.apple1:hover, .apple2:hover, .apple3:hover {
+	animation: rocking 0.3s infinite ease-in-out;
+	cursor: grab;
+}
+
+/* The animation for rocking the apples */
+@keyframes rocking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }

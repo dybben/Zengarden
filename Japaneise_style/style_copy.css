@@ -1,0 +1,84 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+}
+ 
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #333333;
+    background: url('./DALL·E\ 2024-11-19\ 15.57.43\ -\ A\ visually\ stunning\ Japanese-style\ background\ illustration\ for\ a\ website\,\ f.webp') no-repeat center center fixed; /* Baggrundsbillede */
+    background-size: cover; /* Sørg for, at billedet dækker hele baggrunden */
+    margin: 0;
+    padding: 20px;
+}
+ 
+p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #ffffff; /* Passende skriftfarve */
+    text-shadow: none;
+}
+
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff; /* Passende farve */
+    text-shadow: none;
+    letter-spacing: 2px;
+}
+ 
+a:link, a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffcc00; /* Lettere synlig */
+    transition: all 0.3s ease;
+}
+ 
+a:hover, a:focus, a:active {
+    color: #33ccff;
+}
+ 
+header h1, header h2 {
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 3px solid #33ccff;
+}
+ 
+.page-wrapper {
+    margin: 40px auto; /* Mere margin for luft */
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Farve fra tidligere sidebar */
+    padding: 40px; /* Mere whitespace inde i boksen */
+    overflow: hidden;
+    opacity: 0.92; /* Sætter opacity på 75% for boksen */
+    position: relative; /* Sørger for, at boksen ikke bliver påvirket af den sorte baggrund */
+    z-index: 1;
+}
+
+.page-wrapper::before {
+    content: '';
+    position: fixed; /* Gør baggrunden fast på skærmen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Fylder hele skærmen */
+    background: black;
+    opacity: 0.1; /* Sætter opacity for den sorte baggrund til 15% */
+    z-index: 0; /* Sørger for, at den ligger bag boksen */
+}
